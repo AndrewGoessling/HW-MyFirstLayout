@@ -1,0 +1,112 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
+    align-content: center;
+
+  }
+.left {
+    position: relative;
+    width: 50%;
+    background-color: white;
+  }
+.right {
+    position: relative;
+    width: 50%;
+    background-color: white;
+  }
+h1 {
+font-size: 45px;
+font-family: 'Playfair Display', serif;
+color: #211551;
+}
+
+p {
+font-size: 16px;
+font-family: 'Quicksand', sans-serif;
+}
+
+button {
+text-align: center;
+Width: 250px;
+
+height: 50px;
+border-radius: 20px;
+Padding: 10px;
+font-size: 1.5em; 
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,21,81,1) 50%, rgba(96,38,158,1) 100%);
+color: white;
+font-family: 'Quicksand', sans-serif;
+}
+
+
+button:hover {
+transition: .5s;
+color: white;
+background: rgb(2,0,36);
+background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(33,21,81,1) 50%, rgba(96,38,158,1) 100%);
+transition-timing-function: ease;
+}
+button:active {
+    background-color: white;
+}
+button:visited {
+    background-color: white;
+}
+
+
+.grid3 {
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "leftContent rightContent"
+    "footer footer"
+    ;
+  }
+  .header {
+   grid-area: header;
+  }
+  .heroImg {
+   grid-area: heroImg;
+  }
+  .leftContent {
+   grid-area: leftContent;
+  }
+  .rightContent {
+   grid-area: rightContent;
+  }
+  .footer {
+   grid-area: footer;
+  }
+  
+  .gridChild {
+    align-content: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px #211551;
+    min-height: 50px;
+  }
+
+  .flex {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .spacing {
+    margin:25px 0px;
+  }
+  
+  .grid2 {
+    position: relative;
+    align-content: center;
+    display: grid;
+    height:50px;
+    width: 50px;
+    grid-template-rows:1fr;
+    grid-template-columns:3fr 1fr 1fr;
+    grid-template-areas: "column1 column2 column3 column4";
+  }
+
+  
